@@ -1,0 +1,13 @@
+{
+  "pages":[
+    "pages/index/index",
+    "pages/login/login"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "backgroundColor": "#000",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "Pedometer",
+    "navigationBarTextStyle":"black"
+  }
+}

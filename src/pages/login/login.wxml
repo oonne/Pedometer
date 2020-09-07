@@ -1,0 +1,19 @@
+<!--login.wxml-->
+<view class="container">
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 获取头像昵称 </button>
+    <block wx:else>
+      <image class="userinfo_avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo_nickname">{{userInfo.nickName}}</text>
+    </block>
+  </view>
+  <view class='login_from'>
+    <view class='login_input'>
+      <input type='text' bindinput='bindNameInput' bindblur='bindNameInput' adjust-position='{{false}}' focus="{{inputFocus=='name'}}" confirm-type='next' bindconfirm="nameConfirm"/>
+    </view>
+    <view class='login_input'>
+      <input password='true' type='number' bindinput='bindPwdInput' adjust-position='{{false}}' focus="{{inputFocus=='pwd'}}" />
+    </view>
+    <button class="weui-btn" type="primary" bindtap="login">Login</button>
+  </view>
+</view>

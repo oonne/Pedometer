@@ -1,0 +1,27 @@
+/**login.wxss**/
+.userinfo {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.userinfo_avatar {
+  width: 128rpx;
+  height: 128rpx;
+  margin: 20rpx;
+  border-radius: 50%;
+}
+
+.userinfo_nickname {
+  color: #233;
+}
+
+.login_from{
+  margin: 40rpx 30rpx;
+}
+.login_input{
+  background-color: #e0e0e0;
+  border-radius: 10rpx;
+  margin: 20rpx 0;
+  padding: 18rpx 24rpx;
+}

@@ -1,0 +1,79 @@
+/**index.wxss**/
+.container {
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  background-color: #ff8c1c;
+  background-image: linear-gradient(0deg, #ff8c1c, #ff0321);  
+}
+.today_chart{
+  position: absolute;
+  top: 14vh;
+  left: 0;
+  right: 0;
+  bottom: 36vh;
+  height: 50vh;
+  width: 100%;
+}
+.week_chart {
+  position: absolute;
+  bottom: 8vh;
+  height: 110pt;
+  width: 100%;
+}
+
+.data{
+  margin: 2vh 10rpx 24vh;
+  height: 4vh;
+  color: #fff;
+  text-align: center;
+}
+.data_attr{
+  font-size: 0.8rem;
+  line-height: 4vh;
+}
+.data_val{
+  font-size: 1.2rem;
+  line-height: 6vh;
+}
+
+.today_setp{
+  color: #fff;
+  width: 100vw;
+  height: 14vh;
+  text-align: center;
+  margin: auto;
+}
+.today_step_attr{
+  font-size: 1rem;
+  height: 6vh;
+  line-height: 6vh;
+}
+.today_step_val{
+  font-size: 3rem;
+  height: 8vh;
+  line-height: 8vh;
+}
+
+.syan_button{
+  opacity: 0.6;
+  position: absolute;
+  top: 42vh;
+  margin-top: 50pt;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 48rpx;
+  line-height: 48rpx;
+  padding: 0 28rpx;
+  border-radius: 28rpx;
+  background-color: #fff;
+  text-align: center;
+  font-size: 24rpx;
+  color: #ffad7b;
+}
+.syan_button_able{
+  opacity: 0.76;
+}
+.syan_button_able:active{
+  opacity: 0.90;
+}

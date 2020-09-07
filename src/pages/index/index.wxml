@@ -1,0 +1,27 @@
+<!--index.wxml-->
+<view class="container">
+  <canvas canvas-id="today_chart" class="today_chart"/>
+  <canvas canvas-id="week_chart" class="week_chart"/>
+
+  <view class="weui-flex">
+      <view class="weui-flex__item data">
+        <view class='data_attr'>Calories</view>
+        <view class='data_val'>{{stepData.calories}}</view>
+      </view>
+      <view class="weui-flex__item data">
+        <view class='data_attr'>Weekly</view>
+        <view class='data_val'>{{stepData.weekly}}</view>
+      </view>
+      <view class="weui-flex__item data">
+        <view class='data_attr'>Monthly</view>
+        <view class='data_val'>{{stepData.monthly}}</view>
+      </view>
+  </view>
+  <view class="today_setp">
+    <view class="today_step_attr">today</view>
+    <view class="today_step_val">{{stepData.today}}</view>
+  </view>
+  <view class="{{btnClass}}" bindtap="onClickBtn">
+    {{btnText}}
+  </view>
+</view>
